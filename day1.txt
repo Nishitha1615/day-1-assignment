@@ -1,0 +1,65 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2
+
+Answer:
+      HTTP-1:
+          => Transport data accress the internet.
+          => Sending the requeting for information from server once, display on broswer.
+          => Broswer (Request) <=> (Server).
+      HTTP-2:
+          => Advanced version to http 1.0.
+          => Response with more data on information.
+          => Fast,efficent and more trusted protocal.
+          
+2. Write a blog about objects and its internal representation in Javascript 
+
+Answer:
+          => Unordered collection of related data.
+          => primitive or reference types in the form of "Key:"-"Value" pairs.
+          => These keys function are called properties or method.
+      Example:
+          => Object is student it will have properties like ,
+             Name, Age, Address.
+            
+3. Codekata:
+          1. You are provided with a number, "N". Find its factorial.
+Answer:
+          
+const readline =require("readline");
+const inp =readline.createInterface({
+    input: process.stdin
+});
+const userInput=[];
+inp.on("line",(data) =>{
+    userInput.push(data);
+});
+inp.on("close", () =>{
+    let number=parseInt(userInput[0]);
+    let fact=1;
+    for(let i=1;i<=number;i++)
+    {
+        fact=fact*i;
+    }
+    console.log(fact)
+    
+});
+
+2. The area of an equilateral triangle is ¼(√3a2) where "a" represents a side of the triangle. 
+You are provided with the side "a". Find the area of the equilateral triangle.
+
+Answer :
+
+const readline =require("readline");
+const inp =readline.createInterface({
+    input: process.stdin
+});
+const userInput=[];
+inp.on("line",(data) =>{
+    userInput.push(data);
+});
+inp.on("close", () =>{
+    let number=userInput[0];
+    let sqrts=Math.sqrt(3);
+    let t=((1/4)*(sqrts*number**2));
+    console.log(t.toFixed(2));
+    
+});
